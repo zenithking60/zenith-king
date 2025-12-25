@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zénith King | Team Esport</title>
+
+<style>
+/* ===== RESET ===== */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+font-family: 'Arial', sans-serif;
+background: #050505;
+color: #fff;
+}
+
+/* ===== HERO ===== */
+.hero {
+height: 100vh;
+background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.9)),
+url("background.jpg") center/cover no-repeat;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.hero h1 {
+font-size: 72px;
+color: #00ff66;
+text-shadow: 0 0 20px #00ff66;
+animation: glow 2s infinite alternate;
+}
+
+.hero p {
+margin: 20px auto;
+max-width: 700px;
+font-size: 20px;
+}
+
+.btn {
+display: inline-block;
+margin: 15px;
+padding: 15px 35px;
+background: #00ff66;
+color: #000;
+font-weight: bold;
+text-decoration: none;
+border-radius: 6px;
+transition: 0.3s;
+}
+
+.btn:hover {
+background: #00cc55;
+box-shadow: 0 0 15px #00ff66;
+}
+
+/* ===== SECTIONS ===== */
+section {
+padding: 90px 20px;
+max-width: 1200px;
+margin: auto;
+}
+
+section h2 {
+text-align: center;
+font-size: 42px;
+color: #00ff66;
+margin-bottom: 30px;
+}
+
+/* ===== TEXT ===== */
+section p {
+text-align: center;
+font-size: 18px;
+line-height: 1.7;
+}
+
+/* ===== VALUES ===== */
+.values {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 25px;
+margin-top: 50px;
+}
+
+.value-box {
+background: rgba(0,0,0,0.7);
+border: 1px solid #00ff6640;
+padding: 30px;
+border-radius: 10px;
+text-align: center;
+transition: 0.3s;
+}
+
+.value-box:hover {
+transform: translateY(-10px);
+box-shadow: 0 0 20px #00ff66;
+}
+
+/* ===== TEAM ===== */
+.team {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+gap: 30px;
+margin-top: 50px;
+}
+
+.player {
+background: rgba(0,0,0,0.75);
+padding: 25px;
+border-radius: 10px;
+text-align: center;
+border: 1px solid #00ff6633;
+}
+
+.player h3 {
+color: #00ff66;
+}
+
+/* ===== FORM ===== */
+form {
+max-width: 600px;
+margin: 40px auto 0;
+}
+
+input, textarea {
+width: 100%;
+padding: 15px;
+margin: 10px 0;
+background: #111;
+border: 1px solid #00ff6633;
+border-radius: 5px;
+color: #fff;
+}
+
+button {
+width: 100%;
+padding: 15px;
+background: #00ff66;
+color: #000;
+font-size: 18px;
+font-weight: bold;
+border: none;
+border-radius: 6px;
+cursor: pointer;
+}
+
+button:hover {
+box-shadow: 0 0 15px #00ff66;
+}
+
+/* ===== FOOTER ===== */
+footer {
+background: #000;
+padding: 30px;
+text-align: center;
+font-size: 14px;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes glow {
+from { text-shadow: 0 0 10px #00ff66; }
+to { text-shadow: 0 0 30px #00ff66; }
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width: 768px) {
+.hero h1 {
+font-size: 48px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+<div>
+<h1>ZÉNITH KING</h1>
+<p>
+Une team familiale et compétitive, où le respect, l’entraide et le plaisir de jouer
+sont aussi importants que la victoire.
+</p>
+<a href="#recrutement" class="btn">Rejoindre la team</a>
+<a href="#team" class="btn">Notre équipe</a>
+</div>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h2>Qui sommes-nous ?</h2>
+<p>
+Zénith King est une team esport fondée par des passionnés.
+Ici, chacun a sa place. Nous jouons pour progresser,
+performer et surtout passer d’excellents moments ensemble.
+</p>
+</section>
+
+<!-- VALUES -->
+<section>
+<h2>Nos valeurs</h2>
+<div class="values">
+<div class="value-box">🤝 Respect & entraide</div>
+<div class="value-box">🔥 Esprit compétiteur</div>
+<div class="value-box">🎮 Passion du jeu</div>
+<div class="value-box">😄 Fun avant tout</div>
+</div>
+</section>
+
+<!-- TEAM -->
+<section id="team">
+<h2>Notre équipe</h2>
+<div class="team">
+<div class="player">
+<h3>Fondateur</h3>
+<p>Manager / Leader</p>
+</div>
+<div class="player">
+<h3>Joueur FPS</h3>
+<p>Compétitif</p>
+</div>
+<div class="player">
+<h3>Membre Team</h3>
+<p>Communauté</p>
+</div>
+</div>
+</section>
+
+<!-- RECRUITMENT -->
+<section id="recrutement">
+<h2>Recrutement</h2>
+<p>
+Tu cherches une team sérieuse, conviviale et motivée ?
+Zénith King t’attend.
+</p>
+
+<form>
+<input type="text" placeholder="Pseudo" required>
+<input type="number" placeholder="Âge" required>
+<input type="text" placeholder="Jeu principal">
+<textarea rows="5" placeholder="Pourquoi rejoindre Zénith King ?"></textarea>
+<button type="submit">Envoyer ma candidature</button>
+</form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© Zénith King — Team Esport | Tous droits réservés
+</footer>
+
+</body>
+</html>
