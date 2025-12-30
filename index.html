@@ -242,10 +242,29 @@ Tu cherches une team sérieuse, conviviale et motivée ?
 Zénith King t’attend.
 </p>
 
-<form>
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="36081463-ddd5-4ec0-9050-cf01fff9b42e">
+  <input type="text" name="name" required>
+  <input type="email" name="email" required>
+  <textarea name="message" required></textarea>
+  <button type="submit">Submit</button>
+</form>
+  
+<form action="https://api.web3forms.com/submit" method="POST">
+  <input type="hidden" name="access_key" value="36081463-ddd5-4ec0-9050-cf01fff9b42e">
 <input type="text" placeholder="Pseudo" required>
 <input type="number" placeholder="Âge" required>
-<input type="text" placeholder="Jeu principal">
+<p>Quels jeux préférez-vous ? (plusieurs choix possibles)</p>
+
+<label>
+    <input type="checkbox" name="jeux[]" value="Call of Duty"> Call of Duty
+</label>
+
+<br>
+
+<label>
+    <input type="checkbox" name="jeux[]" value="FIFA"> FIFA / EA Sports FC
+</label>
 <textarea rows="5" placeholder="Pourquoi rejoindre Zénith King ?"></textarea>
 <button type="submit">Envoyer ma candidature</button>
 </form>
@@ -258,3 +277,4 @@ Zénith King t’attend.
 
 </body>
 </html>
+
